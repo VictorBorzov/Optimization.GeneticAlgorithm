@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+    lib:
+        build:
+            dockerfile: ./GeneticAlgorithm/Dockerfile
+            context: .
+    test:
+        build:
+            dockerfile: ./GeneticAlgorithm.Tests/Dockerfile
+            context: .
